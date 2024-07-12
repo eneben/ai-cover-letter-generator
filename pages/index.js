@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { useState } from "react";
-import useSWRMutation from "swr/mutation";
 
 const StyledInputWrapper = styled.div`
   display: flex;
@@ -18,7 +17,7 @@ const StyledSection = styled.section`
   padding: 20px;
 `;
 
-const fetcher = (url) => fetch(url).then((response) => response.json());
+// const fetcher = (url) => fetch(url).then((response) => response.json());
 
 export default function HomePage() {
   const [showCoverLetter, setShowCoverLetter] = useState(false);
